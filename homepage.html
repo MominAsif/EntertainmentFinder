@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Entertainment Finder</title>
+<head>
+    <audio controls autoplay>
+        <source src="Entertainment Website Images/Welcome To Jurassic Park.mp3" type="audio/mpeg"/>
+    </audio>
+    <h1 style="font-size: 7rem; color: #2ecc71">Entertainment Finder</h1>
+    <img src="Entertainment Website Images/popcorn.jpeg"
+    width = "300"
+    height = "300"
+    /> 
+    <img src="Entertainment Website Images/giphy.gif"
+    width = "300"
+    height = "300"
+    /> 
+    <br>
+    <br>
+    <style>
+        body {
+            background-image: url("Entertainment Website Images/spongebobbackground1.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+          
+        [data-tab-info] {
+            display: none;
+        }
+          
+        .active[data-tab-info] {
+            display: block;
+        }
+          
+        .tab-content {
+            font-size: 30px;
+            font-family: serif;
+            font-weight: bold;
+            color: rgb(62, 175, 151);
+        }
+          
+        .tabs {
+            font-size: 40px;
+            color: rgb(124, 175, 151);
+            display: flex;
+            margin: 3;
+        }
+          
+        .tabs span {
+            background: rgb(87, 98, 150);
+            padding: 10px;
+            border: 5px solid rgb(184, 165, 80);
+        }
+          
+        .tabs span:hover {
+            background: rgb(29, 185, 112);
+            cursor: pointer;
+            color: yellow;
+        }
+    </style>
+</head>
+  
+<body>
+    <div class="tabs">
+        <span data-tab-value="#tab_1">Home</span>
+        <span data-tab-value="#tab_2">Movies</span>
+        <span data-tab-value="#tab_3">Shows</span>
+        <span data-tab-value="#tab_4">Anime</span>
+        <span data-tab-value="#tab_5">Other</span>
+        <span data-tab-value="#tab_6">Movie Quiz</span>
+    </div>
+
+    <div class="tabs__tab active" id="tab_1" data-tab-info>
+        <p style="font-family: monospace; font-size: 1.5rem; color: #ff0000">Movies and shows are a great way to relax and relieve stress after a long day. Watch some content to laugh, cry, go on an adventure, or watch your favorite characters on the screen. Click on the movies, shows, or anime tabs to discover a variety of recommendations for each genre in that category</p>
+    </div>
+    <div class="tab-content">
+        <div class="tabs__tab" id="tab_2" data-tab-info>
+            <p>Search for your favorite movie genre.</p>
+            <img src="Entertainment Website Images/actioncharacters.jpeg"
+                width = "250"
+                height = "150"
+            /> 
+
+            <button onclick="NewTab()">
+                Action Movies
+            </button>
+       
+            <script>
+                function NewTab() {
+                    window.open(
+                    "actionmovie.html", "_blank");
+                }
+            </script>
+
+            <button onclick="NewTab2()">
+                Comedy Movies
+            </button>
+
+            <script>
+                function NewTab2() {
+                    window.open(
+                    "comedymovies.html", "_blank");
+                }
+            </script>
+
+             <button onclick="NewTab3()">
+                Sci-Fi Movies
+            </button>
+
+            <script>
+                function NewTab3() {
+                    window.open(
+                    "scifimovies.html", "_blank");
+                }
+            </script>
+        </div>
+
+        <div class="tabs__tab" id="tab_3" data-tab-info>
+            <p>Search for your favorite show genre.</p>
+            <img src="Entertainment Website Images/tvshowcharacters.webp"
+                width = "250"
+                height = "150"
+            /> 
+            <button onclick="NewTab4()">
+                Fantasy Shows
+            </button>
+         
+            <script>
+                function NewTab4() {
+                    window.open(
+                    "fantasyshows.html", "_blank");
+                }
+            </script>
+            <button onclick="NewTab5()">
+                Drama Shows
+            </button>
+         
+            <script>
+                function NewTab5() {
+                    window.open(
+                    "dramashows.html", "_blank");
+                }
+            </script>
+            <button onclick="NewTab6()">
+                Sci-fi Shows
+            </button>
+         
+            <script>
+                function NewTab6() {
+                    window.open(
+                    "scifishows.html", "_blank");
+                }
+            </script>
+        </div>
+
+        <div class="tabs__tab" id="tab_4" data-tab-info>
+            <p>Search for your favorite anime.</p>
+            <img src="Entertainment Website Images/animecharacters.jpeg"
+                width = "250"
+                height = "150"
+            />
+            <button onclick="NewTab7()">
+                Action Anime
+            </button>
+         
+            <script>
+                function NewTab7() {
+                    window.open(
+                    "actionanime.html", "_blank");
+                }
+            </script>
+
+            <button onclick="NewTab8()">
+                Sports Anime
+            </button>
+         
+            <script>
+                function NewTab8() {
+                    window.open(
+                    "sportsanime.html", "_blank");
+                }
+            </script>
+
+            <button onclick="NewTab9()">
+                Sci-fi Anime
+            </button>
+         
+            <script>
+                function NewTab9() {
+                    window.open(
+                    "scifianime.html", "_blank");
+                }
+            </script>
+  
+        </div>
+        <div class="tabs__tab" id="tab_5" data-tab-info>
+            <p>Order some movie snacks or go watch a recent movie at theaters.</p>
+            <img src="Entertainment Website Images/movietheater.jpeg"
+                width = "250"
+                height = "150"
+            />
+            <img src="Entertainment Website Images/moviesnacks.webp"
+                width = "250"
+                height = "150"
+            />
+            <button onclick="NewTab10()">
+                Go to a Movie Theater
+            </button>
+         
+            <script>
+                function NewTab10() {
+                    window.open(
+                    "https://www.google.com/search?q=movie+theaters+near+me&oq=movie+theaters+near+me&aqs=chrome..69i57.5401j0j7&sourceid=chrome&ie=UTF-8");
+                }
+            </script>
+
+            <button onclick="NewTab11()">
+                Order Food
+            </button>
+         
+            <script>
+                function NewTab11() {
+                    window.open(
+                    "https://www.doordash.com");
+                }
+            </script>
+  
+        </div>
+        <div class="tabs__tab" id="tab_6" data-tab-info>
+            <p>Order some movie snacks or go watch a recent movie at theaters.</p>
+            <img src="Entertainment Website Images/quiz.webp"
+                width = "250"
+                height = "150"
+            />
+            <button onclick="NewTab12()">
+                Take the movie quiz
+            </button>
+         
+            <script>
+                function NewTab12() {
+                    window.open(
+                    "quizmain.html", "_blank");
+                }
+            </script>
+  
+        </div>
+    </div>
+
+    
+    
+    <script type="text/javascript">
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+  
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+  
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('active')
+                })
+                target.classList.add('active');
+            })
+        })
+    </script>
+</body>
+  
+</html>

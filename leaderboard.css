@@ -1,0 +1,15 @@
+/* Followed this tutorial with some modifications of my own: https://www.youtube.com/watch?v=f4fB9Xg2JEY&ab_channel=BrianDesign*/
+
+body {
+    color: #fff;
+}
+
+#highScoresList {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
